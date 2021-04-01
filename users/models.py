@@ -9,6 +9,7 @@ from .managers import CustomUserManger
 class CustomUser(AbstractUser, PermissionsMixin):
     class Meta:
         db_table = 'auth_user'
+
     username = None
     first_name = None
     last_name = None
